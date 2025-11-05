@@ -48,6 +48,6 @@ public class FormController {
             <p>%s, %s!</p>
             <p>Email: %s</p>
             <p>Hora actual: %s</p>
-        """.formatted(saludo, nombre != null ? nombre : "Usuario", email != null ? email : "No registrado", currentTime));
+        """.formatted(saludo, nombre != null && !nombre.isBlank() ? nombre : "Usuario", email != null && !email.isBlank() ? email : "No registrado", currentTime));
     }
 }

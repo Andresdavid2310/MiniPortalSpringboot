@@ -47,7 +47,7 @@ public class PasswordController {
         }
         return MenuUtil.menu().concat("""
             <h3>Contraseña generada:</h3>
-            <p>%s</p>
+            <p>%s</p><br>
             <a href='/portal'><button>Volver al inicio</button></a>
         """.formatted(password));
     }
